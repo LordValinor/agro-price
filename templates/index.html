@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block title %}Цены на продукцию — Agro Price Monitor{% endblock %}
+
+{% block content %}
+<section class="hero hero-home" id="overview">
+    <div class="hero-copy">
+        <p class="eyebrow">Мониторинг рынка · 2026</p>
+        <h1>Цены, которые<br><span>помогают решать.</span></h1>
+        <p class="hero-text">Сравнивайте цены на сельхозпродукцию по регионам и выбирайте выгодный канал продажи.</p>
+        <div class="hero-actions">
+            <a class="button button-green" href="#prices">Смотреть цены <span>↓</span></a>
+            <a class="text-link" href="/docs">Документация API <span>↗</span></a>
+        </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="visual-grid"></div>
+        <div class="visual-card">
+            <span>СРЕДНИЙ РОСТ</span>
+            <strong>+4,8%</strong>
+            <i>за неделю</i>
+        </div>
+        <div class="visual-caption">Данные по 4 регионам<br>и 5 категориям</div>
+    </div>
+</section>
+
+<section class="stats-grid">
+    <article class="stat-card">
+        <span>Продукты</span>
+        <strong>24</strong>
+        <small>в демо-каталоге</small>
+    </article>
+    <article class="stat-card stat-card-accent">
+        <span>Регионы</span>
+        <strong>04</strong>
+        <small>федеральных округа</small>
+    </article>
+    <article class="stat-card">
+        <span>Каналы</span>
+        <strong>02</strong>
+        <small>перекупщик / напрямую</small>
+    </article>
+</section>
+
+<section class="panel" id="prices">
+    <div class="section-intro">
+        <div>
+            <p class="eyebrow">Быстрый поиск</p>
+            <h2>Найти свою цену</h2>
+        </div>
+        <span class="section-number">01 / 03</span>
+    </div>
+    <form class="filters" method="get" action="/">
+        <label>
+            Регион
+            <select name="region">
+                <option value="">Все регионы</option>
+                {% for item in regions %}
+                    <option value="{{ item }}" {% if item == selected_region %}selected{% endif %}>{{ item }}</option>
+                {% endfor %}
+            </select>
+        </label>
+        <label>
+            Категория
+            <select name="category">
+                <option value="">Все категории</option>
+                {% for item in categories %}
+                    <option value="{{ item }}" {% if item == selected_category %}selected{% endif %}>{{ item }}</option>
+                {% endfor %}
+            </select>
+        </label>
+        <label>
+            Продукт
+            <input type="search" name="name" value="{{ selected_name }}" placeholder="Например, молоко">
+        </label>
+        <div class="filter-actions">
+            <button type="submit">Применить <span>↗</span></button>
+            <a class="reset-link" href="/">Сбросить</a>
+        </div>
+    </form>
+</section>
+
+<section class="table-card">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">Сводка рынка</p>
+            <h2>Актуальные цены</h2>
+        </div>
+        <span class="result-count">Найдено: {{ products|length }}</span>
+    </div>
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Продукт</th>
+                    <th>Категория</th>
+                    <th>Регион</th>
+                    <th>Перекупщик</th>
+                    <th>Прямая продажа</th>
+                    <th>Изменение за неделю</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for product in products %}
+                <tr>
+                    <td class="product-name">{{ product.name }}</td>
+                    <td>{{ product.category }}</td>
+                    <td>{{ product.region }}</td>
+                    <td>{{ "%.2f"|format(product.price_buyer) }} ₽</td>
+                    <td class="direct-price">{{ "%.2f"|format(product.price_direct) }} ₽</td>
+                    <td>
+                        <span class="change {% if product.change_week > 0 %}positive{% elif product.change_week < 0 %}negative{% endif %}">
+                            {% if product.change_week > 0 %}+{% endif %}{{ "%.1f"|format(product.change_week) }}%
+                        </span>
+                    </td>
+                    <td><a class="details-link" href="/product/{{ product.id }}">Открыть <span>↗</span></a></td>
+                </tr>
+            {% else %}
+                <tr><td class="empty-cell" colspan="7">По заданным фильтрам ничего не найдено.</td></tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Agro Price Monitor{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+</head>
+<body class="site-shell">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="/" aria-label="Agro Price Monitor">
+                <span class="brand-mark">РСХБ</span><span class="brand-dot">.</span><span>цифра</span>
+            </a>
+            <nav class="site-nav" aria-label="Основная навигация">
+                <a href="/#overview">Обзор</a>
+                <a href="/#prices">Цены</a>
+                <a href="/docs">API</a>
+            </nav>
+            <a class="header-action" href="/docs">Открыть API <span>↗</span></a>
+        </div>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>РСХБ.цифра · Agro Price Monitor</span>
+            <span>Демонстрационный проект для фермеров</span>
+        </div>
+    </footer>
+</body>
+</html>

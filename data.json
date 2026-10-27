@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "Молоко",
+    "category": "Молочное",
+    "region": "ЦФО",
+    "price_buyer": 28.0,
+    "price_direct": 34.0,
+    "change_week": 3.5,
+    "updated_at": "2026-10-27T09:00:00"
+  },
+  {
+    "id": 2,
+    "name": "Пшеница",
+    "category": "Зерновые",
+    "region": "ЦФО",
+    "price_buyer": 15.2,
+    "price_direct": 18.1,
+    "change_week": 6.8,
+    "updated_at": "2026-10-27T09:10:00"
+  },
+  {
+    "id": 3,
+    "name": "Картофель",
+    "category": "Овощи",
+    "region": "ЦФО",
+    "price_buyer": 22.0,
+    "price_direct": 29.0,
+    "change_week": -2.1,
+    "updated_at": "2026-10-27T09:20:00"
+  },
+  {
+    "id": 4,
+    "name": "Говядина",
+    "category": "Мясо",
+    "region": "ЦФО",
+    "price_buyer": 410.0,
+    "price_direct": 485.0,
+    "change_week": 7.2,
+    "updated_at": "2026-10-27T09:30:00"
+  },
+  {
+    "id": 5,
+    "name": "Яйца",
+    "category": "Птицеводство",
+    "region": "ЦФО",
+    "price_buyer": 72.0,
+    "price_direct": 88.0,
+    "change_week": -6.4,
+    "updated_at": "2026-10-27T09:40:00"
+  },
+  {
+    "id": 6,
+    "name": "Капуста",
+    "category": "Овощи",
+    "region": "ЦФО",
+    "price_buyer": 19.0,
+    "price_direct": 26.0,
+    "change_week": 1.4,
+    "updated_at": "2026-10-27T09:50:00"
+  },
+  {
+    "id": 7,
+    "name": "Молоко",
+    "category": "Молочное",
+    "region": "ЮФО",
+    "price_buyer": 31.0,
+    "price_direct": 38.0,
+    "change_week": 6.1,
+    "updated_at": "2026-10-27T10:00:00"
+  },
+  {
+    "id": 8,
+    "name": "Пшеница",
+    "category": "Зерновые",
+    "region": "ЮФО",
+    "price_buyer": 16.8,
+    "price_direct": 19.5,
+    "change_week": -1.8,
+    "updated_at": "2026-10-27T10:10:00"
+  },
+  {
+    "id": 9,
+    "name": "Свинина",
+    "category": "Мясо",
+    "region": "ЮФО",
+    "price_buyer": 275.0,
+    "price_direct": 335.0,
+    "change_week": 2.6,
+    "updated_at": "2026-10-27T10:20:00"
+  },
+  {
+    "id": 10,
+    "name": "Курица",
+    "category": "Птицеводство",
+    "region": "ЮФО",
+    "price_buyer": 165.0,
+    "price_direct": 205.0,
+    "change_week": -6.7,
+    "updated_at": "2026-10-27T10:30:00"
+  },
+  {
+    "id": 11,
+    "name": "Морковь",
+    "category": "Овощи",
+    "region": "ЮФО",
+    "price_buyer": 24.0,
+    "price_direct": 32.0,
+    "change_week": 8.3,
+    "updated_at": "2026-10-27T10:40:00"
+  },
+  {
+    "id": 12,
+    "name": "Свёкла",
+    "category": "Овощи",
+    "region": "ЮФО",
+    "price_buyer": 21.0,
+    "price_direct": 28.0,
+    "change_week": 0.9,
+    "updated_at": "2026-10-27T10:50:00"
+  },
+  {
+    "id": 13,
+    "name": "Молоко",
+    "category": "Молочное",
+    "region": "ПФО",
+    "price_buyer": 27.0,
+    "price_direct": 33.0,
+    "change_week": -6.2,
+    "updated_at": "2026-10-27T11:00:00"
+  },
+  {
+    "id": 14,
+    "name": "Пшеница",
+    "category": "Зерновые",
+    "region": "ПФО",
+    "price_buyer": 14.6,
+    "price_direct": 17.4,
+    "change_week": 4.4,
+    "updated_at": "2026-10-27T11:10:00"
+  },
+  {
+    "id": 15,
+    "name": "Картофель",
+    "category": "Овощи",
+    "region": "ПФО",
+    "price_buyer": 20.0,
+    "price_direct": 27.0,
+    "change_week": 6.5,
+    "updated_at": "2026-10-27T11:20:00"
+  },
+  {
+    "id": 16,
+    "name": "Говядина",
+    "category": "Мясо",
+    "region": "ПФО",
+    "price_buyer": 395.0,
+    "price_direct": 470.0,
+    "change_week": -3.1,
+    "updated_at": "2026-10-27T11:30:00"
+  },
+  {
+    "id": 17,
+    "name": "Капуста",
+    "category": "Овощи",
+    "region": "ПФО",
+    "price_buyer": 18.0,
+    "price_direct": 25.0,
+    "change_week": -7.0,
+    "updated_at": "2026-10-27T11:40:00"
+  },
+  {
+    "id": 18,
+    "name": "Яйца",
+    "category": "Птицеводство",
+    "region": "ПФО",
+    "price_buyer": 69.0,
+    "price_direct": 84.0,
+    "change_week": 2.0,
+    "updated_at": "2026-10-27T11:50:00"
+  },
+  {
+    "id": 19,
+    "name": "Молоко",
+    "category": "Молочное",
+    "region": "СФО",
+    "price_buyer": 29.0,
+    "price_direct": 36.0,
+    "change_week": 1.9,
+    "updated_at": "2026-10-27T12:00:00"
+  },
+  {
+    "id": 20,
+    "name": "Пшеница",
+    "category": "Зерновые",
+    "region": "СФО",
+    "price_buyer": 15.0,
+    "price_direct": 18.0,
+    "change_week": -7.4,
+    "updated_at": "2026-10-27T12:10:00"
+  },
+  {
+    "id": 21,
+    "name": "Свинина",
+    "category": "Мясо",
+    "region": "СФО",
+    "price_buyer": 285.0,
+    "price_direct": 345.0,
+    "change_week": 6.6,
+    "updated_at": "2026-10-27T12:20:00"
+  },
+  {
+    "id": 22,
+    "name": "Курица",
+    "category": "Птицеводство",
+    "region": "СФО",
+    "price_buyer": 172.0,
+    "price_direct": 212.0,
+    "change_week": 3.2,
+    "updated_at": "2026-10-27T12:30:00"
+  },
+  {
+    "id": 23,
+    "name": "Морковь",
+    "category": "Овощи",
+    "region": "СФО",
+    "price_buyer": 26.0,
+    "price_direct": 34.0,
+    "change_week": -1.2,
+    "updated_at": "2026-10-27T12:40:00"
+  },
+  {
+    "id": 24,
+    "name": "Свёкла",
+    "category": "Овощи",
+    "region": "СФО",
+    "price_buyer": 23.0,
+    "price_direct": 30.0,
+    "change_week": 7.1,
+    "updated_at": "2026-10-27T12:50:00"
+  }
+]
